@@ -1,8 +1,7 @@
-from classes.Person import Person
+from classes.FileIo import FileIo
 
 
-john = Person("John", 30, "Arkansas")
-
-john.print_age()
-john.print_location()
-john.print_name()
+file = FileIo("myfile.txt")
+file.overwrite_file("some text more ")
+file.append_file("\nI added this text")
+file.read_file()
