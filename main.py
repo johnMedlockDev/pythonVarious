@@ -1,7 +1,6 @@
-from classes.FileIo import FileIo
+from classes.CmdArgs import CmdArgs
 
 
-file = FileIo("myfile.txt")
-file.overwrite_file("some text more ")
-file.append_file("\nI added this text")
-file.read_file()
+cmd = CmdArgs()
+
+cmd.print_console()
